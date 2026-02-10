@@ -1,57 +1,52 @@
 // This problem involves playing cards: https://en.wikipedia.org/wiki/Standard_52-card_deck
 
-// You will need to implement a function getCardValue
-// the function takes a single parameter, a string representing a playing card
-// the function should return the numerical value of the card
-// the first test and first case is written for you
-// complete the rest of the tests and cases
-// write one test at a time, and make it pass, build your solution up methodically
-// just make one change at a time -- don't rush -- programmers are deep and careful thinkers
+// Implement a function getCardValue, when given a string representing a playing card,
+// should return the numerical value of the card.
+
+// A valid card string will contain a rank followed by the suit.
+// The rank can be one of the following strings:
+//   "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"
+// The suit can be one of the following emojis:
+//   "♠", "♥", "♦", "♣"
+// For example: "A♠", "2♥", "10♥", "J♣", "Q♦", "K♦".
+
+// When the card is an ace ("A"), the function should return 11.
+// When the card is a face card ("J", "Q", "K"), the function should return 10.
+// When the card is a number card ("2" to "10"), the function should return its numeric value.
+
+// When the card string is invalid (not following the above format), the function should
+// throw an error.
+
+// Acceptance criteria:
+// After you have implemented the function, write tests to cover all the cases, and
+// execute the code to ensure all tests pass.
+
 function getCardValue(card) {
-  if (rank === "A") {
-    return 11;
-  }
+  // TODO: Implement this function
 }
 
 // The line below allows us to load the getCardValue function into tests in other files.
 // This will be useful in the "rewrite tests with jest" step.
 module.exports = getCardValue;
 
-// You need to write assertions for your function to check it works in different cases
-// we're going to use this helper function to make our assertions easier to read
-// if the actual output matches the target output, the test will pass
+// Helper functions to make our assertions easier to read.
 function assertEquals(actualOutput, targetOutput) {
   console.assert(
     actualOutput === targetOutput,
     `Expected ${actualOutput} to equal ${targetOutput}`
   );
 }
-// Acceptance criteria:
 
-// Given a card string in the format "A♠" (representing a card in blackjack - the last character will always be an emoji for a suit, and all characters before will be a number 2-10, or one letter of J, Q, K, A),
-// When the function getCardValue is called with this card string as input,
-// Then it should return the numerical card value
-const aceofSpades = getCardValue("A♠");
-assertEquals(aceofSpades, 11);
+// TODO: Write tests to cover all outcomes, including throwing errors for invalid cards.
+// Examples:
+assertEquals(getCardValue("9♠"), 9);
 
-// Handle Number Cards (2-10):
-// Given a card with a rank between "2" and "9",
-// When the function is called with such a card,
-// Then it should return the numeric value corresponding to the rank (e.g., "5" should return 5).
-const fiveofHearts = getCardValue("5♥");
-// ====> write your test here, and then add a line to pass the test in the function above
+// Handling invalid cards
+try {
+  getCardValue("invalid");
 
-// Handle Face Cards (J, Q, K):
-// Given a card with a rank of "10," "J," "Q," or "K",
-// When the function is called with such a card,
-// Then it should return the value 10, as these cards are worth 10 points each in blackjack.
+  // This line will not be reached if an error is thrown as expected
+  console.error("Error was not thrown for invalid card");
+} catch (e) {}
 
-// Handle Ace (A):
-// Given a card with a rank of "A",
-// When the function is called with an Ace,
-// Then it should, by default, assume the Ace is worth 11 points, which is a common rule in blackjack.
-
-// Handle Invalid Cards:
-// Given a card with an invalid rank (neither a number nor a recognized face card),
-// When the function is called with such a card,
-// Then it should throw an error indicating "Invalid card rank."
+// What other invalid card cases can you think of?
