@@ -1,5 +1,8 @@
 # Implement solutions and rewrite tests with Jest
 
+Before writing any code, please read the [Testing Function Guide](testing-guide.md) to learn how
+to choose test values that thoroughly test a function.
+
 ## 1 Implement solutions
 
 In the `implement` directory you've got a number of functions you'll need to implement.
