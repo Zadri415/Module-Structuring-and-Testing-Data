@@ -4,7 +4,7 @@
 
 let age = 33;
 
-age++; // Increases age by 1
+age = age++; // Increases age by 1
 
 console.log(age); // Output: 34
 
