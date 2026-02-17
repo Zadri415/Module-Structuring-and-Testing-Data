@@ -6,6 +6,7 @@ let age = 33;
 
 age++; // Increases age by 1
 
+console.log(age); // Output: 34
 
 
-// Changed const to let because the variables value need to change during the program. const creates a fixed reference that cannot be reassigned. but let allows updating the variable which is required when incrementing or modifying values.
+
