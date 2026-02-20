@@ -6,7 +6,7 @@ function multiply(a, b) {
   console.log(a * b);
 }
 
-console.log(`The result of multiplying 10 and 32 is ${multiply(10, 32)}
+console.log(`The result of multiplying 10 and 32 is ${multiply(10, 32)}`);
 
 // =============> write your explanation here
 // The function printed the answer but did't return it, so when it was used in the template string, it came out as 'undefined.'
