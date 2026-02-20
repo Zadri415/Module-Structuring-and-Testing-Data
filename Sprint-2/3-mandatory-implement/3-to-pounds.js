@@ -7,7 +7,6 @@
 function formatPenceToPounds(penceString){
   const penceStringWithoutTrailingP = penceString.substring(0, penceString.length -1);
   const pounds = paddedPenceNumberString.slice(0, -2);
-  const pence = paddedPenceNumberString.slice(-2);
      return `£${pounds}.${pence}`;
 }
 
