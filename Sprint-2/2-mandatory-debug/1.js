@@ -6,7 +6,7 @@ function sum(a, b) {
   return a + b;
 }
 
-console.log(`The sum of 10 and 32 is ${sum(a + b)}`);
+console.log(`The sum of 10 and 32 is ${sum(10, 32)}`);
 
 // =============> write your explanation here
 // The problem was the semicolon after return, which made the function stop before adding the numbers
