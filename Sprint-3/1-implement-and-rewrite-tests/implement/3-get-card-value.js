@@ -66,13 +66,13 @@ function assertEquals(actualOutput, targetOutput) {
 
 // TODO: Write tests to cover all outcomes, including throwing errors for invalid cards.
 // Examples:
-assertEquals(getCardValue("9♠"), 9);
-assertEquals(getCardValue("A♥"), 11);
-assertEquals(getCardValue("J♣"), 10);
-assertEquals(getCardValue("Q♦"), 10);
-assertEquals(getCardValue("K♠"), 10);
-assertEquals(getCardValue("10♥"), 10);
-assertEquals(getCardValue("2♦"), 2);
+assertEquals(getCardValue("9♠"), 9); // should return 9 for the 9 of spades
+assertEquals(getCardValue("A♥"), 11); // should return 11 for the ace of hearts 
+assertEquals(getCardValue("J♣"), 10); // should return 10 for the jack of clubs
+assertEquals(getCardValue("Q♦"), 10); // should return 10 for the queen of diamonds
+assertEquals(getCardValue("K♠"), 10); // should return 10 for the king of spades
+assertEquals(getCardValue("10♥"), 10); // should return 10 for the 10 of hearts
+assertEquals(getCardValue("2♦"), 2); // should return 2 for the 2 of diamonds
 
 
 // Handling invalid cards
