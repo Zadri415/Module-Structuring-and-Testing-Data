@@ -8,9 +8,9 @@ const getAngleType = require("../implement/1-get-angle-type");
 // Case 1: Acute angles
 test(`should return "Acute angle" when (0 < angle < 90)`, () => {
   // Test various acute angles, including boundary cases
-  expect(getAngleType(1)).toEqual("Acute angle");
-  expect(getAngleType(45)).toEqual("Acute angle");
-  expect(getAngleType(89)).toEqual("Acute angle");
+  expect(getAngleType(1)).toEqual("Acute angle"); // should return "Acute angle" for angles just above 0
+  expect(getAngleType(45)).toEqual("Acute angle"); // should return "Acute angle" for a typical acute angle
+  expect(getAngleType(89)).toEqual("Acute angle"); // should return "Acute angle" for angles just below 90
 });
 
 // Case 2: Right angle
