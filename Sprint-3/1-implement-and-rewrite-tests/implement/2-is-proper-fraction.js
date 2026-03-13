@@ -38,8 +38,8 @@ exports.assertEquals = assertEquals;
 // What combinations of numerators and denominators should you test?
 
 // Example: 1/2 is a proper fraction
-assertEquals(isProperFraction(1, 2), true);
-assertEquals(isProperFraction(2, 1), false);
+assertEquals(isProperFraction(1, 2), true); // 2 is greater than 1, so this should return true.
+assertEquals(isProperFraction(2, 1), false); // 1 is not greater than 2, so this should return false.
 assertEquals(isProperFraction(0, 1), true);
 assertEquals(isProperFraction(1, 0), false);
 assertEquals(isProperFraction(-1, 2), true);
