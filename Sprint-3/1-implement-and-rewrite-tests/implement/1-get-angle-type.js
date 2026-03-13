@@ -16,9 +16,9 @@ const { assertEquals, isProperFraction } = require("./2-is-proper-fraction");
 // After you have implemented the function, write tests to cover all the cases, and
 // execute the code to ensure all tests pass.
 
-function getAngleType(angle) {
+function getAngleType(angle) { // This function should return a string indicating the type of angle based on the input angle in degrees.
   // TODO: Implement this function
-  if (angle > 0 && angle < 90)
+  if (angle > 0 && angle < 90) 
     return "Acute angle";
   else if (angle === 90)
     return "Right angle";
