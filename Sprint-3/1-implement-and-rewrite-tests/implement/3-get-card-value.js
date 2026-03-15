@@ -48,7 +48,7 @@ function getCardValue(card) {
 
   throw new Error("Invalid card"); // If the rank is not valid (not a face card, ace, or number between 2 and 10), throw an error
 }
-console.log(getCardValue("A♠")); // 11
+
 console.log(getCardValue("2♥")); // 2
 console.log(getCardValue("J♣")); // 10
 
