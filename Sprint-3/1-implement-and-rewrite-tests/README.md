@@ -8,7 +8,7 @@ to choose test values that thoroughly test a function.
 In the `implement` directory you've got a number of functions you'll need to implement.
 For each function, you also have a number of different cases you'll need to check for your function.
 
-Write your implementation and then write your tests to cover the cases the function should fulfil.
+Write your implementation and your tests to cover the cases the function should fulfil.
 
 Here is a recommended order:
 
