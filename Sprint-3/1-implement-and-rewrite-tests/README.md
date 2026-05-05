@@ -8,7 +8,7 @@ to choose test values that thoroughly test a function.
 In the `implement` directory you've got a number of functions you'll need to implement.
 For each function, you also have a number of different cases you'll need to check for your function.
 
-Write your assertions and build up your program case by case. Don't rush to a solution. The point of these assignments is to learn how to write assertions and build up a program step by step.
+Write your implementation and your tests to cover the cases the function should fulfil.
 
 Here is a recommended order:
 

@@ -37,7 +37,7 @@ Since the hours value is 0, it turns that into the string '00' by adding a leadi
 Since 61 seconds has 1 second left over after making a full minute, the value passed into pad() is 1.
 Inside the function, num equals 1, and it gets turned into '01' so the final time shows as 00:01:01. */
 
-// e) What is the return value assigned to num when pad is called for the last time in this program?  Explain your answer
+// e) What is the return value of pad when it is called for the last time in this program?  Explain your answer
 // =============> write your answer here
 /* When pad() is called for the last time, num is 1 because there's 1 second left over.
    The function turns that number into the string '01' by adding a leading zero.
