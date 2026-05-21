@@ -31,7 +31,7 @@ console.assert(
   const minutes = time.slice(3, 5);
 
   if (hours == 0) return `12:${minutes} am`; 
-  if (hours < 12) return `${time} am`;
+  if (hours < 12) return `${hours}:${minutes} am`;
   if (hours === 12) return `${time} pm`;
 
   return `${hours - 12}:${minutes} pm`;
