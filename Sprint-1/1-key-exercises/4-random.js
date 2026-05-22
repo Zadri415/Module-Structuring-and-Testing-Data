@@ -9,9 +9,16 @@ console.log(num);
 // It will help to think about the order in which expressions are evaluated
 // Try logging the value of num and running the program several times to build an idea of what the program is doing
 
-// Math.random() returns a random decimal number between 0 and 1
-// (maximum - minimum + 1) represents the size of range of numbers we want to include. We add +1 because both minim and maximum are included in the range
-// Math.random() * (maximum - minimum + 1) gives us a random decimal between 0 and 100, but still decimal
-// Math.floor() rounds down to the nearest whole number. So this. turns decimals like 99.9 into 99
-// + minimum since minimum = 1, this shifts the entire random range up by 1. so instead of 0-100, the range becomes 1-100
-// num should return a random integer between 1 and 100
+// Math.random() returns a random decimal in the interval [0, 1)
+
+// (maximum - minimum + 1) gives the size of the interval [minimum, maximum]
+
+// Math.random() * (maximum - minimum + 1)
+// gives a random decimal in the interval [0, 100)
+
+// Math.floor() rounds down to the nearest whole number
+
+// + minimum shifts the interval upward by 1,
+// so the final integer range becomes [1, 100]
+
+// num should return a random integer between 1 and 100 inclusive
