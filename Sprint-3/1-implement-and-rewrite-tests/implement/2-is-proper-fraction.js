@@ -16,7 +16,6 @@ function isProperFraction(numerator, denominator) {
     return false;
   }
   return Math.abs(numerator) < Math.abs(denominator);
-  
 }
 
 // The line below allows us to load the isProperFraction function into tests in other files.
@@ -42,7 +41,7 @@ assertEquals(isProperFraction(4, 2), false);
 assertEquals(isProperFraction(0, 2), true);
 assertEquals(isProperFraction(2, 0), false);
 assertEquals(isProperFraction(0, -5), true);
-assertEquals(isProperFraction(
+assertEquals(isProperFraction(5, 0), false);
 
 assertEquals(isProperFraction(3, 3), false);
 assertEquals(isProperFraction(-3, 3), false);
@@ -52,3 +51,10 @@ assertEquals(isProperFraction(-3, -3), false);
 assertEquals(isProperFraction(-1, 2), true);
 assertEquals(isProperFraction(1, -2), true);
 assertEquals(isProperFraction(-3, -4), true);
+
+assertEquals(isProperFraction(0.5, 1), true);
+assertEquals(isProperFraction(1.5, 1), false);
+assertEquals(isProperFraction(1.1, 1), false);
+
+assertEquals(isProperFraction(1e9, 1e10), true);
+assertEquals(isProperFraction(1e10, 1e9), false);
