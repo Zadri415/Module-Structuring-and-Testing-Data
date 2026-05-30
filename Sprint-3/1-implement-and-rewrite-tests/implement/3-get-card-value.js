@@ -23,6 +23,19 @@
 
 function getCardValue(card) {
   // TODO: Implement this function
+  if (typeof card !== "string") {
+    throw new Error("Card must be a string");
+  }
+
+  const match = card.match(/^(A|10|[2-9]|J|Q|K)([♠♥♦♣])$/);
+  if (!match) {
+    throw new Error("Invalid card format");
+  }
+
+  const rank = match[1];
+  if (rank === "A") return 11;
+  if (rank === "J" || rank === "Q" || rank === "K") return 10;
+  return Number(rank);
 }
 
 // The line below allows us to load the getCardValue function into tests in other files.
